@@ -92,7 +92,7 @@ class DataTransformation:
                 input_feature_test_arr, np.array(target_feature_test_df)
             ]
 
-            logging.info(f'Saced preprocessing object')
+            logging.info(f'Started preprocessing object')
 
             save_object(
                 file_path=self.data_transformation.preprocessor_ob_file_path,
@@ -102,7 +102,7 @@ class DataTransformation:
             return (
                 train_arr,
                 test_arr,
-                self.data_transformation.preprocessor_ob_file_path,
+                self.data_transformation.preprocessor_ob_file_path
             )
         
         except Exception as e:
